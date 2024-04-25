@@ -1,3 +1,6 @@
 .background {
   background: rgba(0, 0, 109, 0.089);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 36%, rgba(221, 221, 221, 0.089) 100%); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

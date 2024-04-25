@@ -4,6 +4,8 @@ import './JobPosition.css';
 import '../styles.css';
 import { lstJobs } from "../../data/i18n/en";
 import { Technology } from "./Technology";
+import { Waves } from "./waves/Waves";
+import { lstTechnologies } from '../../data/i18n/en';
 
 export const Summary = () => {
     return (
@@ -14,18 +16,20 @@ export const Summary = () => {
                 <h2>Front End Developer</h2>
 
                 <hr />
-                <Technology />
-                <hr />
                 < InfoSegment
                     title="Objective"
                     desc="Realizar software de utilidad y calidad, aplicando las mejores prácticas de programación.
                     en mi área constantemente, capacitándome con las tecnologías más recientes."
                 />
                 <hr />
+                < InfoSegment title="Technologies" />
+                <Technology lstTechnologies={lstTechnologies} />
+                <hr />
                 < InfoSegment title="Previous Jobs" />
             </div>
-                {lstJobs && lstJobs.map((item, index) => <div key={item.company} style={{ padding: '10px' }}><JobPosition {...item} imgRight={index % 2 == 0} /></div>)}
-            </div>
+            {lstJobs && lstJobs.map((item, index) => <div key={item.company} style={{ padding: '10px' }}><JobPosition {...item} imgRight={index % 2 == 0} /></div>)}
+            <Waves />
+        </div>
     )
- 
+
 }
