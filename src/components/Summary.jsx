@@ -12,6 +12,7 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
+import { FaSquareGithub } from "react-icons/fa6";
 
 export const Summary = () => {
     const { isMobile } = useContext(AppContext);
@@ -22,6 +23,10 @@ export const Summary = () => {
 
     const openLinkedIn = () => {
         window.open('https://www.linkedin.com/in/jorge-yael-espinosa-ruiz-98280a127/', 'blank');
+    }
+
+    const openGithub = () => {
+        window.open('https://github.com/Magux14', 'blank');
     }
 
     return (
@@ -52,7 +57,10 @@ export const Summary = () => {
                             <p onClick={() => copyToClipboard('+525531004755')} ><FaSquarePhone size="25" /> +52 5531004755</p>
                             <p onClick={() => copyToClipboard('jyer94@gmail.com')}><MdEmail size="25" /> jyer94@gmail.com</p>
                         </div>
-                        <span onClick={openLinkedIn} className="copy-to-clipboard"><FaLinkedin size="30" color="#0a66c2" /></span>
+                        <div>
+                            <span onClick={openLinkedIn} className="copy-to-clipboard"><FaLinkedin size="30" color="#0a66c2" /></span>
+                            <span onClick={openGithub} className="copy-to-clipboard"><FaSquareGithub size="30" /></span>
+                        </div>
                     </div>
 
                     {isMobile &&
