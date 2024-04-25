@@ -4,6 +4,8 @@ import { JobPositionImg } from './JobPositionImg';
 import { Technology } from './Technology';
 
 export const JobPosition = (props) => {
+    const mobile = window.innerHeight > window.innerWidth;
+
     return (
         <div className="container job-segment">
             <div className="row">
@@ -30,14 +32,15 @@ export const JobPosition = (props) => {
 
                         </>
                 } */}
-                <div className="col-9">
+                <div className={mobile ? "col" : "col-10"}>
                     <JobPositionDesc {...props} />
                     <br />
                     <Technology lstTechnologies={props.lstTechnologies} small={true} />
                 </div>
-                <div className="col-3">
+                {!mobile && <div className="col-2">
                     <JobPositionImg logoPath={props.logoPath} />
                 </div>
+                }
             </div>
         </div>
     )
