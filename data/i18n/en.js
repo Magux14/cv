@@ -1,23 +1,37 @@
+export const objective =
+    `Create high quality software following the best practices.
+My best skill is the creation of mobile applications using Ionic Framework with Angular.`;
+
 export const lstTechnologies = [
     {
-        name: 'Ionic Framework, Cordova / Capacitor (2,3,4,5)',
+        name: 'Ionic Framework',
         years: 5,
         img: 'ionic'
     },
     {
-        name: 'Angular (8-17)',
+        name: 'Angular',
         years: 5,
         img: 'angular'
     },
     {
-        name: 'React 18',
+        name: 'React',
         years: 2,
         img: 'react'
     },
     {
-        name: 'Javascript/Typescript',
+        name: 'Javascript',
         years: 6,
         img: 'javascript'
+    },
+    {
+        name: 'SQLite',
+        years: 2,
+        img: 'sqlite'
+    },
+    {
+        name: 'Typescript',
+        years: 4,
+        img: 'typescript'
     },
     {
         name: 'HTML + CSS3',
@@ -35,12 +49,12 @@ export const lstTechnologies = [
         img: 'swift'
     },
     {
-        name: 'Sql Server',
+        name: 'SQL Server',
         years: 5,
         img: 'sqlserver'
     },
     {
-        name: 'My SQL',
+        name: 'MySQL',
         years: 3,
         img: 'mysql'
     },
@@ -84,15 +98,16 @@ export const lstJobs = [
     {
         company: 'Definity First',
         date: 'October 2021 - Current',
-        title: 'Ionic Sr. Developer',
+        title: 'Frontend Developer Sr.',
         lstResponsabilities: [
             'Create and support an insurance app with Ionic 6 + Capacitor 4',
-            'Give support and create new modules for a web page with .NET + Jquery + SQL Server + React'
+            'Give support and create new modules for a web page with ASP .NET + Jquery + SQL Server + React'
         ],
         logoPath: 'definity',
         lstTechnologies: [
             ...lstTechnologies.filter(item =>
                 item.img == 'javascript'
+                || item.img == 'typescript'
                 || item.img == 'html'
                 || item.img == 'git'
                 || item.img == 'ionic'
@@ -103,6 +118,7 @@ export const lstJobs = [
                 || item.img == 'react'
                 || item.img == 'net'
                 || item.img == 'jquery'
+                || item.img == 'sqlite'
             )
         ]
     },
@@ -121,7 +137,7 @@ export const lstJobs = [
         logoPath: 'vision',
         lstTechnologies: [
             ...lstTechnologies.filter(item =>
-                item.img == 'javascript'
+                item.img == 'typescript'
                 || item.img == 'html'
                 || item.img == 'git'
                 || item.img == 'ionic'
@@ -136,8 +152,7 @@ export const lstJobs = [
         date: 'November 2018 – February 2021',
         title: 'Mobile Development Leader',
         lstResponsabilities: [
-            'Development of hybrid mobile applications(Android / iOS) with Ionic(3, 4, 5), implementing Cordova ',
-            'plugins and custom ones with native Java/ Swift 5 code. ',
+            'Development of hybrid mobile applications(Android / iOS) with Ionic(3, 4, 5), implementing Cordova plugins and custom ones with native Java/ Swift 5 code. ',
             'Management of the following concepts in Ionic: reusable components, rxjs, async - await, promises, APIS, web requests, dynamic forms, observable, among others... ',
             'Connection with bluetooth peripherals(smart bracelet with vital signs taking). ',
             'Implement push notifications with Firebase. ',
@@ -152,6 +167,7 @@ export const lstJobs = [
         lstTechnologies: [
             ...lstTechnologies.filter(item =>
                 item.img == 'javascript'
+                || item.img == 'typescript'
                 || item.img == 'html'
                 || item.img == 'git'
                 || item.img == 'ionic'
@@ -173,7 +189,7 @@ export const lstJobs = [
         date: 'January 2018 – November 2018',
         title: '.NET Developer',
         lstResponsabilities: [
-            'Give support and create new modules for a web page with .NET + Jquery + SQL Server'
+            'Give support and create new modules for a web page with .NET Core 2 + Jquery + SQL Server'
         ],
         logoPath: 'towa',
         lstTechnologies: [
@@ -190,7 +206,7 @@ export const lstJobs = [
         ]
     },
     {
-        company: 'Ashcroft Instruments Mexico',
+        company: 'Ashcroft Instruments México',
         title: 'IT Trainee',
         date: 'May 2017- January 2018',
         lstResponsabilities: [

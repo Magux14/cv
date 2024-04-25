@@ -1,0 +1,14 @@
+.date {
+    color: rgb(233, 233, 233);
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.company-name {
+    font-size: 1.2em;
+    color: rgb(233, 233, 233);
+    font-weight: bold;
+}

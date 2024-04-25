@@ -1,0 +1,11 @@
+.photo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo {
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}

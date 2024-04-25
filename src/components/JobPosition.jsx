@@ -1,10 +1,12 @@
+import { useContext } from 'react';
+import { AppContext } from '../AppContext';
 import './JobPosition.css';
 import { JobPositionDesc } from './JobPositionDesc';
 import { JobPositionImg } from './JobPositionImg';
 import { Technology } from './Technology';
 
 export const JobPosition = (props) => {
-    const mobile = window.innerHeight > window.innerWidth;
+    const { isMobile } = useContext(AppContext);
 
     return (
         <div className="container job-segment">
@@ -32,12 +34,12 @@ export const JobPosition = (props) => {
 
                         </>
                 } */}
-                <div className={mobile ? "col" : "col-10"}>
+                <div className={isMobile ? "col" : "col-10"}>
                     <JobPositionDesc {...props} />
                     <br />
                     <Technology lstTechnologies={props.lstTechnologies} small={true} />
                 </div>
-                {!mobile && <div className="col-2">
+                {!isMobile && <div className="col-2">
                     <JobPositionImg logoPath={props.logoPath} />
                 </div>
                 }
