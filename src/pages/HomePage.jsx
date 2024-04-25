@@ -1,10 +1,11 @@
 import { Summary } from '../components';
+import './HomePage.css';
 
 const HomePage = () => {
   return (
     <>
 
-      <div>
+      <div className='background'>
 
         <Summary />
       </div>

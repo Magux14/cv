@@ -1,16 +1,39 @@
-export const JobPosition = ({ title, company, lstResponsabilities, logoPath }) => {
+import './JobPosition.css';
+import { JobPositionDesc } from './JobPositionDesc';
+import { JobPositionImg } from './JobPositionImg';
+
+export const JobPosition = (props) => {
     return (
-        <div className="container">
+        <div className="container job-segment">
             <div className="row">
-                <div className="col-sm">
-                    <h2>{title}</h2>
-                    <h3>{company}</h3>
-                    <ul>
-                        {lstResponsabilities && lstResponsabilities.map(item => <li key={item} >{item}</li>)}
-                    </ul>
+                {/* {
+                    props.imgRight
+                        ?
+                        <>
+                            <div className="col-9">
+                                <JobPositionDesc {...props} />
+                            </div>
+                            <div className="col-3">
+                                <JobPositionImg logoPath={props.logoPath} />
+                            </div>
+                        </>
+
+                        :
+                        <>
+                            <div className="col-3">
+                                <JobPositionImg logoPath={props.logoPath} />
+                            </div>
+                            <div className="col-9">
+                                <JobPositionDesc {...props} />
+                            </div>
+
+                        </>
+                } */}
+                <div className="col-9">
+                    <JobPositionDesc {...props} />
                 </div>
-                <div className="col-sm">
-                    Foto
+                <div className="col-3">
+                    <JobPositionImg logoPath={props.logoPath} />
                 </div>
             </div>
         </div>

@@ -1,0 +1,11 @@
+.logo {
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.job-segment {
+    border-radius: 5px;
+    border: 3px solid rgba(128, 128, 128, 0.253);
+    background: rgba(223, 223, 223, 0.13);
+    padding: 15px;
+}
