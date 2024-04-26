@@ -11,6 +11,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { FaSquareGithub } from "react-icons/fa6";
+import { Tooltip } from 'react-tooltip';
 
 export const Summary = () => {
     const { isMobile, i18n } = useContext(AppContext);
@@ -57,8 +58,14 @@ export const Summary = () => {
                         <img src={`/assets/img/photo.png`} alt="" className="photo" />
                         <br />
                         <div className="align-right copy-to-clipboard">
-                            <p onClick={() => copyToClipboard('+525531004755')} ><FaSquarePhone size="25" /> +52 5531004755</p>
-                            <p onClick={() => copyToClipboard('jyer94@gmail.com')}><MdEmail size="25" /> jyer94@gmail.com</p>
+                            <a data-tooltip-id='phone' data-tooltip-content='Copy to clipboard' onClick={() => copyToClipboard('+525531004755')} className="clicked-flash" >
+                                < Tooltip id='phone' />
+                                <p ><FaSquarePhone size="25" /> +52 5531004755</p>
+                            </a>
+                            <a data-tooltip-id='email' data-tooltip-content='Copy to clipboard' onClick={() => copyToClipboard('jyer94@gmail.com')} className="clicked-flash">
+                                < Tooltip id='email' />
+                                <p ><MdEmail size="25" /> jyer94@gmail.com</p>
+                            </a>
                         </div>
                         <div>
                             <span onClick={openLinkedIn} className="copy-to-clipboard"><FaLinkedin size="30" color="#0a66c2" /></span>
@@ -95,6 +102,21 @@ export const Summary = () => {
                     <JobPosition {...item} imgRight={index % 2 == 0} />
                 </div>)
             }
+
+            <div className="text-center">
+                < InfoSegment title="Courses" desc="I like to be up to date with current technologies." />
+            </div>
+            <div className="p-3">
+                <ul>
+                    <li>2024 React with Redux and MERN (in progress… Udemy).</li>
+                    <li>2023 React – from beginner to expert (Udemy).</li>
+                    <li>2022 React Native (Udemy).</li>
+                    <li>2021 Android Developer - Kotlin (Udemy).</li>
+                    <li>2021 Ionic 6+: Create IOS, Android and PWAs applications with Angular (Udemy).</li>
+                    <li>2021 Illustrator (Udemy).</li>
+                    <li>2019 Ionic 4: Create IOS, Android and PWAs applications with Angular (Udemy). </li>
+                </ul>
+            </div>
 
             <Waves />
         </div >

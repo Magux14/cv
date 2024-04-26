@@ -19,3 +19,12 @@
         width: 25%;
     }
 }
+
+.clicked-flash {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clicked-flash:active {
+    color: rgb(13, 175, 148);
+}

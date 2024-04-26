@@ -7,9 +7,9 @@ export const i18nEs = {
     lstTechnologies: lstTechnologies,
     lstPersonalProjects: [
         {
-            title: 'Personal Videogame',
+            title: 'Personal Video Game',
             company: 'Unity',
-            desc: 'I Always wanted to create a videogame, so I investigate how to use Unity and I created a little piece of a game. This is a RPG game you are at the school and crazy stuff happens every day. Cova (the main character) has to fight against many enemies avoiding their attacks. I haven\'t finished this game yet but this is a little test',
+            desc: 'I Always wanted to create a video game, so I investigate how to use Unity and I created a little piece of a game. This is a RPG game you are at the school and crazy stuff happens every day. Cova (the main character) has to fight against many enemies avoiding their attacks. I haven\'t finished this game yet but this is a little test',
             lstResponsabilities: [
             ],
             lstTechnologies: [
@@ -43,7 +43,7 @@ export const i18nEs = {
         {
             title: 'Boardgame App',
             Company: 'Ionic Angular',
-            desc: 'I really like Mario Party, so I created an App to play with a boardgame, it\'s like the videogame but in real life.',
+            desc: 'I really like Mario Party, so I created an App to play with a boardgame, it\'s like the video game but in real life.',
             lstResponsabilities: [
             ],
             lstTechnologies: [

@@ -1,5 +1,5 @@
 import './Technology.css';
-import { Tooltip } from 'react-tooltip'
+import { Tooltip } from 'react-tooltip';
 
 export const Technology = ({ lstTechnologies, small = false }) => {
     return (

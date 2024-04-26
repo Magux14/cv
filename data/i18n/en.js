@@ -9,9 +9,9 @@ My best skill is the creation of mobile applications using Ionic Framework with 
     lstTechnologies: lstTechnologies,
     lstPersonalProjects: [
         {
-            title: 'Personal Videogame',
+            title: 'Personal Video Game',
             company: 'Unity',
-            desc: 'I Always wanted to create a videogame, so I investigate how to use Unity and I created a little piece of a game. This is a RPG game you are at the school and crazy stuff happens every day. Cova (the main character) has to fight against many enemies avoiding their attacks. I haven\'t finished this game yet but this is a little test',
+            desc: 'I always wanted to create a video game, so I investigate how to use Unity and I created a little piece of a game. This is a RPG game, you are at the school and crazy stuff happens every day. Cova (the main character) has to fight against many enemies avoiding their attacks. I haven\'t finished this game yet, this is a little demo though.',
             lstResponsabilities: [
             ],
             lstTechnologies: [
@@ -28,7 +28,7 @@ My best skill is the creation of mobile applications using Ionic Framework with 
         {
             title: 'Retro TV',
             company: 'Ionic Angular',
-            desc: 'When I was a child my parents bought me a lot of VHS and dvd about cartoons, I digitalized them, search for old commercials on youtube and I made my own retro TV like the old times.',
+            desc: 'When I was a child my parents bought me a lot of VHS and DVDs about cartoons. I digitized them, search for old commercials on Youtube and I made my own retro TV like the good old times.',
             lstTechnologies: [
                 ...lstTechnologies.filter(item =>
                     item.img == 'ionic'
@@ -65,7 +65,7 @@ My best skill is the creation of mobile applications using Ionic Framework with 
         {
             title: 'Pokemon Trainer',
             company: 'React',
-            desc: 'I wanted to create another mobile and real life boardgame, so this app is to catch pokemon, if you answer correctly is yours! the physical game is not finished yet...',
+            desc: 'I wanted to create mobile and real life board game, so this app is to catch pokemon, if you answer correctly is yours! I haven\'t finished the physical game yet...',
             lstTechnologies: [
                 ...lstTechnologies.filter(item =>
                     item.img == 'react'
@@ -79,7 +79,7 @@ My best skill is the creation of mobile applications using Ionic Framework with 
         {
             title: 'Boardgame App',
             company: 'Ionic Angular',
-            desc: 'I really like Mario Party, so I created an App to play with a boardgame, it\'s like the videogame but in real life.',
+            desc: 'I really like Mario Party, so I created an App to play with a physical board game, it\'s like the video game but in real life.',
             lstResponsabilities: [
             ],
             lstTechnologies: [
