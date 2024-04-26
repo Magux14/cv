@@ -9,3 +9,13 @@
     margin: auto;
     border-radius: 50%;
 }
+
+.salle-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    img {
+        width: 25%;
+    }
+}

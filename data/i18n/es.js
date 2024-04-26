@@ -1,11 +1,9 @@
 import { lstTechnologies } from "./technologies";
 
-export const i18nEng = {
+export const i18nEs = {
 
-    career: 'Cybernetics and Computer Systems Engineer',
     objective:
-        `Create high quality software following the best practices.
-My best skill is the creation of mobile applications using Ionic Framework with Angular.`,
+        `Crear software de calidad con las mejores prácticas, mi mejor habilidad es crear aplicaciones móviles utilizando Ionic Framework con Angular.`,
     lstTechnologies: lstTechnologies,
     lstPersonalProjects: [
         {
@@ -22,23 +20,7 @@ My best skill is the creation of mobile applications using Ionic Framework with 
             ],
             lstImgs: [],
             lstVideos: [
-                'https://www.youtube.com/embed/95fxS7eKxAs'
-            ]
-        },
-        {
-            title: 'Retro TV',
-            company: 'Ionic Angular',
-            desc: 'When I was a child my parents bought me a lot of VHS and dvd about cartoons, I digitalized them, search for old commercials on youtube and I made my own retro TV like the old times.',
-            lstTechnologies: [
-                ...lstTechnologies.filter(item =>
-                    item.img == 'ionic'
-                    || item.img == 'angular'
-                    || item.img == 'typescript'
-                    || item.img == 'capacitor'
-                )],
-            lstImgs: [],
-            lstVideos: [
-                'https://www.youtube.com/embed/uNshHN_KV3Y'
+                'https://www.youtube.com/watch?v=95fxS7eKxAs'
             ]
         },
         {
@@ -53,32 +35,14 @@ My best skill is the creation of mobile applications using Ionic Framework with 
                     || item.img == 'angular'
                     || item.img == 'firebase'
                     || item.img == 'typescript'
-                    || item.img == 'capacitor'
                 )
             ],
-            lstImgs: [
-                'apps/finanzas/1.png',
-                'apps/finanzas/2.png'
-            ],
+            lstImgs: [],
             lstVideos: []
         },
         {
-            title: 'Pokemon Trainer',
-            company: 'React',
-            desc: 'I wanted to create another mobile and real life boardgame, so this app is to catch pokemon, if you answer correctly is yours! the physical game is not finished yet...',
-            lstTechnologies: [
-                ...lstTechnologies.filter(item =>
-                    item.img == 'react'
-                    || item.img == 'javascript'
-                )
-            ],
-            lstVideos: [
-                'https://www.youtube.com/embed/PwDh9TDkm3g'
-            ]
-        },
-        {
             title: 'Boardgame App',
-            company: 'Ionic Angular',
+            Company: 'Ionic Angular',
             desc: 'I really like Mario Party, so I created an App to play with a boardgame, it\'s like the videogame but in real life.',
             lstResponsabilities: [
             ],
@@ -87,13 +51,10 @@ My best skill is the creation of mobile applications using Ionic Framework with 
                     item.img == 'ionic'
                     || item.img == 'angular'
                     || item.img == 'typescript'
-                    || item.img == 'capacitor'
                 )
             ],
             lstImgs: [],
-            lstVideos: [
-                'https://www.youtube.com/embed/3jxowsHhc6A?si=xExFTYcMK1SnmOuF'
-            ]
+            lstVideos: []
         },
         {
             title: 'Python Scripting',
@@ -111,7 +72,19 @@ My best skill is the creation of mobile applications using Ionic Framework with 
             lstImgs: [],
             lstVideos: []
         },
-
+        {
+            title: 'Retro TV',
+            Company: 'Ionic Angular',
+            desc: 'When I was a child my parents bought me a lot of VHS and dvd about cartoons, I digitalized them, search for old commercials on youtube and I made my own retro TV like the old times.',
+            lstTechnologies: [
+                ...lstTechnologies.filter(item =>
+                    item.img == 'ionic'
+                    || item.img == 'angular'
+                    || item.img == 'typescript'
+                )],
+            lstImgs: [],
+            lstVideos: []
+        }
     ],
     lstJobs: [
         {
@@ -138,7 +111,6 @@ My best skill is the creation of mobile applications using Ionic Framework with 
                     || item.img == 'net'
                     || item.img == 'jquery'
                     || item.img == 'sqlite'
-                    || item.img == 'capacitor'
                     || item.img == 'csharp'
                 )
             ]
@@ -165,7 +137,6 @@ My best skill is the creation of mobile applications using Ionic Framework with 
                     || item.img == 'angular'
                     || item.img == 'firebase'
                     || item.img == 'webservices'
-                    || item.img == 'capacitor'
                 )
             ]
         },
@@ -204,7 +175,6 @@ My best skill is the creation of mobile applications using Ionic Framework with 
                     || item.img == 'net'
                     || item.img == 'csharp'
                     || item.img == 'java'
-                    || item.img == 'cordova'
                 )
             ]
         },

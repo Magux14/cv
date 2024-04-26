@@ -34,12 +34,11 @@ export const JobPosition = (props) => {
 
                         </>
                 } */}
-                <div className={isMobile ? "col" : "col-10"}>
+                <div className={isMobile || !props.logoPath ? "col" : "col-10"}>
                     <JobPositionDesc {...props} />
-                    <br />
                     <Technology lstTechnologies={props.lstTechnologies} small={true} />
                 </div>
-                {!isMobile && <div className="col-2">
+                {!isMobile && props.logoPath && <div className="col-2">
                     <JobPositionImg logoPath={props.logoPath} />
                 </div>
                 }

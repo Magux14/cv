@@ -2,10 +2,8 @@ import { InfoSegment } from "./InfoSegment";
 import { JobPosition } from "./JobPosition";
 import './JobPosition.css';
 import '../styles.css';
-import { lstJobs, objective } from "../../data/i18n/en";
 import { Technology } from "./Technology";
 import { Waves } from "./waves/Waves";
-import { lstTechnologies } from '../../data/i18n/en';
 import './Summary.css';
 import { MdEmail } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
@@ -15,7 +13,8 @@ import { AppContext } from "../AppContext";
 import { FaSquareGithub } from "react-icons/fa6";
 
 export const Summary = () => {
-    const { isMobile } = useContext(AppContext);
+    const { isMobile, i18n } = useContext(AppContext);
+    const { lstJobs, lstPersonalProjects, objective, lstTechnologies } = i18n;
 
     const copyToClipboard = (text) => {
         navigator.clipboard.writeText(text);
@@ -38,10 +37,14 @@ export const Summary = () => {
                         <div className="main-info-container text-center">
                             <h1>Jorge Yael Espinosa Ruiz</h1>
                             <h2>Front End Developer</h2>
+                            <div>{i18n.career}</div>
+                        </div>
+
+                        <div className="salle-container">
+                            <img src={`/assets/img/logos/salle.png`} alt="" />
                         </div>
                         {!isMobile &&
                             <>
-                                <hr />
                                 < InfoSegment
                                     title="Objective"
                                     desc={objective}
@@ -73,10 +76,8 @@ export const Summary = () => {
             </div>
 
             <div className="text-center p-3">
-                <hr />
                 < InfoSegment title="Technologies & Tools" />
-                <Technology lstTechnologies={lstTechnologies} />
-                <hr />
+                <Technology lstTechnologies={lstTechnologies.filter(item => item.professional)} />
                 < InfoSegment title="Experience" />
             </div>
             {
@@ -84,6 +85,17 @@ export const Summary = () => {
                     <JobPosition {...item} imgRight={index % 2 == 0} />
                 </div>)
             }
+
+            <div className="text-center">
+                < InfoSegment title="Personal Projects" desc="By time to time I like to do personal projects, sometimes for necessity sometimes for fun, here are some examples" />
+            </div>
+
+            {
+                lstPersonalProjects && lstPersonalProjects.map((item, index) => <div key={item.title} style={{ padding: '10px' }}>
+                    <JobPosition {...item} imgRight={index % 2 == 0} />
+                </div>)
+            }
+
             <Waves />
         </div >
     )
