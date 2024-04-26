@@ -97,11 +97,11 @@ My best skill is the creation of mobile applications using Ionic Framework with 
         },
         {
             title: 'Python Scripting',
-            Company: 'Pyhton 3',
+            Company: 'Python 3',
             desc: 'Time to time I like to play with scripting, making some usefull stuff with python (nothing complex)',
             lstResponsabilities: [
                 'Getting all wifi passwords of a computer.',
-                'When I gave IT classes to elder people I liked to face them with a quizz, with pyhton I made quick random selector of my students.'
+                'When I gave IT classes to elder people I liked to face them with a quizz, with python I made quick random selector of my students.'
             ],
             lstTechnologies: [
                 ...lstTechnologies.filter(item =>
@@ -236,7 +236,7 @@ My best skill is the creation of mobile applications using Ionic Framework with 
             date: 'May 2017- January 2018',
             lstResponsabilities: [
                 'DB Manager JR',
-                'Basic automation scripting with pyhton 2',
+                'Basic automation scripting with python 2',
                 'It client support',
                 'Hardware maintenance'
             ],

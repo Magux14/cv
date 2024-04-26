@@ -108,7 +108,7 @@ export const lstTechnologies = [
         professional: true
     },
     {
-        name: 'Pyhton',
+        name: 'Python',
         years: 1,
         img: 'python',
         professional: true
