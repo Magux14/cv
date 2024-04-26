@@ -42,7 +42,7 @@ export const Summary = () => {
                         </div>
 
                         <div className="salle-container">
-                            <img src={`/assets/img/logos/salle.png`} alt="" />
+                            <img src={`./assets/img/logos/salle.png`} alt="" />
                         </div>
                         {!isMobile &&
                             <>
@@ -55,7 +55,7 @@ export const Summary = () => {
                     </div>
                     <div className={`${isMobile ? 'col-12' : 'col-4'} photo-container`}>
                         <br />
-                        <img src={`/assets/img/photo.png`} alt="" className="photo" />
+                        <img src={`./assets/img/photo.png`} alt="" className="photo" />
                         <br />
                         <div className="align-right copy-to-clipboard">
                             <a data-tooltip-id='phone' data-tooltip-content='Copy to clipboard' onClick={() => copyToClipboard('+525531004755')} className="clicked-flash" >

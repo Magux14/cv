@@ -11,7 +11,7 @@ export const Technology = ({ lstTechnologies, small = false }) => {
                         {
                             lstTechnologies && lstTechnologies.sort((a, b) => a.years > b.years ? -1 : 1).map(item =>
                                 <div key={item.img} className="col no-padding">
-                                    <img src={`/assets/img/logos/tech/${item.img}.png`} alt="" className="tech-logo" />
+                                    <img src={`./assets/img/logos/tech/${item.img}.png`} alt="" className="tech-logo" />
                                     <br />
                                     <strong className='text-center'>
                                         {item.name}
@@ -25,7 +25,7 @@ export const Technology = ({ lstTechnologies, small = false }) => {
             {small && lstTechnologies && lstTechnologies.sort((a, b) => a.years > b.years ? -1 : 1).map(item =>
                 <a key={item.img} data-tooltip-id={item.img} data-tooltip-content={item.name}>
                     < Tooltip id={item.img} />
-                    <img src={`/assets/img/logos/tech/${item.img}.png`} alt="" className="tech-logo-small" />
+                    <img src={`./assets/img/logos/tech/${item.img}.png`} alt="" className="tech-logo-small" />
                 </a >
             )}
 

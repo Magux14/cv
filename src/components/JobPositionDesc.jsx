@@ -32,7 +32,7 @@ export const JobPositionDesc = ({ title, desc, date, company, lstResponsabilitie
                     <div className='row justify-content-center'>
                         {lstImgs.map(img =>
                             <div key={img} className='col img-container '>
-                                <img src={`/assets/img/${img}`} alt="" />
+                                <img src={`./assets/img/${img}`} alt="" />
                             </div>
                         )}
                     </div>
