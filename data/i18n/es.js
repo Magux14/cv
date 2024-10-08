@@ -71,19 +71,6 @@ export const i18nEs = {
             ],
             lstImgs: [],
             lstVideos: []
-        },
-        {
-            title: 'Retro TV',
-            Company: 'Ionic Angular',
-            desc: 'When I was a child my parents bought me a lot of VHS and dvd about cartoons, I digitalized them, search for old commercials on youtube and I made my own retro TV like the old times.',
-            lstTechnologies: [
-                ...lstTechnologies.filter(item =>
-                    item.img == 'ionic'
-                    || item.img == 'angular'
-                    || item.img == 'typescript'
-                )],
-            lstImgs: [],
-            lstVideos: []
         }
     ],
     lstJobs: [

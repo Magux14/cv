@@ -26,22 +26,6 @@ My best skill is the creation of mobile applications using Ionic Framework with 
             ]
         },
         {
-            title: 'Retro TV',
-            company: 'Ionic Angular',
-            desc: 'When I was a child my parents bought me a lot of VHS and DVDs about cartoons. I digitized them, search for old commercials on Youtube and I made my own retro TV like the good old times.',
-            lstTechnologies: [
-                ...lstTechnologies.filter(item =>
-                    item.img == 'ionic'
-                    || item.img == 'angular'
-                    || item.img == 'typescript'
-                    || item.img == 'capacitor'
-                )],
-            lstImgs: [],
-            lstVideos: [
-                'https://www.youtube.com/embed/uNshHN_KV3Y'
-            ]
-        },
-        {
             title: 'Personal Finances App',
             company: 'Ionic Angular',
             desc: 'Living in couple may be a little challenging talking about money. I created an App to handle my finances to control every spend I have.',
