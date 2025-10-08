@@ -5,7 +5,7 @@ export const i18nEng = {
     career: 'Cybernetics and Computer Systems Engineer',
     objective:
         `I have 7 years of experience as a front-end developer, I create user-friendly and responsive websites. Right now I'm using Next.js to create scalable and high-performance applications.
-Good practices are important in order to ease maintenance, it saves time, reduces bugs, and makes collaboration easier.`,
+Good practices are important in order to ease maintenance, it saves time, reduces , and makes collaboration easier.`,
     lstTechnologies: lstTechnologies,
     lstPersonalProjects: [
         {
@@ -58,6 +58,7 @@ Good practices are important in order to ease maintenance, it saves time, reduce
                     || item.img == 'firebase'
                     || item.img == 'typescript'
                     || item.img == 'capacitor'
+                    || item.img == 'html'
                 )
             ],
             lstImgs: [
@@ -74,6 +75,7 @@ Good practices are important in order to ease maintenance, it saves time, reduce
                 ...lstTechnologies.filter(item =>
                     item.img == 'react'
                     || item.img == 'javascript'
+                    || item.img == 'html'
                 )
             ],
             lstVideos: [
@@ -81,7 +83,7 @@ Good practices are important in order to ease maintenance, it saves time, reduce
             ]
         },
         {
-            title: 'Boardgame App',
+            title: 'Magux Party App',
             company: 'Ionic Angular',
             desc: 'I really like Mario Party, so I created an App to play with a physical board game, it\'s like the video game but in real life.',
             lstResponsabilities: [
@@ -92,6 +94,7 @@ Good practices are important in order to ease maintenance, it saves time, reduce
                     || item.img == 'angular'
                     || item.img == 'typescript'
                     || item.img == 'capacitor'
+                    || item.img == 'html'
                 )
             ],
             lstImgs: [],
