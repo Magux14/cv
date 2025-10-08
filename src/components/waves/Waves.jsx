@@ -1,4 +1,4 @@
-import './Waves.css';
+import './waves.scss';
 
 export const Waves = () => {
     return (

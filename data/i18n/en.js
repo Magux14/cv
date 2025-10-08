@@ -4,10 +4,30 @@ export const i18nEng = {
 
     career: 'Cybernetics and Computer Systems Engineer',
     objective:
-        `Create high quality software following the best practices.
-My best skill is the creation of mobile applications using Ionic Framework with Angular.`,
+        `I have 7 years of experience as a front-end developer, I create user-friendly and responsive websites. Right now I'm using Next.js to create scalable and high-performance applications.
+Good practices are important in order to ease maintenance, it saves time, reduces bugs, and makes collaboration easier.`,
     lstTechnologies: lstTechnologies,
     lstPersonalProjects: [
+        {
+            title: 'Boardgames Catalog',
+            company: 'React + Vite',
+            desc: 'I really like board games, I made a page to have an inventory of each of them. Also I created some digital games:',
+            lstResponsabilities: [
+            ],
+            lstURLS: [
+                'https://magux14.github.io/boardgames/'
+            ],
+            lstTechnologies: [
+                ...lstTechnologies.filter(item =>
+                    item.img == 'react'
+                    || item.img == 'javascript'
+                    || item.img == 'html'
+                )
+            ],
+            lstImgs: [
+                'apps/boardgames/example.png'
+            ],
+        },
         {
             title: 'Personal Video Game',
             company: 'Unity',
@@ -101,8 +121,9 @@ My best skill is the creation of mobile applications using Ionic Framework with 
         {
             company: 'Definity First',
             date: 'October 2021 - Current',
-            title: 'Frontend Developer Sr.',
+            title: 'Senior Frontend Developer',
             lstResponsabilities: [
+                'Build from scratch a responsive Next.js application, using SSR, hooks, components, etc',
                 'Create and support an insurance app with Ionic 6 + Capacitor 4',
                 'Give support and create new modules for a web page with ASP .NET + Jquery + SQL Server + React'
             ],
@@ -110,6 +131,8 @@ My best skill is the creation of mobile applications using Ionic Framework with 
             lstTechnologies: [
                 ...lstTechnologies.filter(item =>
                     item.img == 'javascript'
+                    || item.img == 'react'
+                    || item.img == 'next js'
                     || item.img == 'typescript'
                     || item.img == 'html'
                     || item.img == 'git'
@@ -118,7 +141,6 @@ My best skill is the creation of mobile applications using Ionic Framework with 
                     || item.img == 'sqlserver'
                     || item.img == 'firebase'
                     || item.img == 'webservices'
-                    || item.img == 'react'
                     || item.img == 'net'
                     || item.img == 'jquery'
                     || item.img == 'sqlite'

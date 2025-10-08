@@ -1,3 +1,3 @@
-export * from './InfoSegment';
-export * from './Summary';
-export * from './JobPosition';
+export * from './info-segment/InfoSegment';
+export * from './summary/Summary';
+export * from './job-position/JobPosition';

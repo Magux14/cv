@@ -1,9 +1,8 @@
 import { useContext } from 'react';
-import { AppContext } from '../AppContext';
-import './JobPosition.css';
-import { JobPositionDesc } from './JobPositionDesc';
-import { JobPositionImg } from './JobPositionImg';
-import { Technology } from './Technology';
+import { AppContext } from '../../AppContext';
+import { JobPositionDesc } from '../job-position-desc/JobPositionDesc';
+import { Technology } from '../technology/Technology';
+import './job-position.scss';
 
 export const JobPosition = (props) => {
     const { isMobile } = useContext(AppContext);
@@ -34,14 +33,11 @@ export const JobPosition = (props) => {
 
                         </>
                 } */}
-                <div className={isMobile || !props.logoPath ? "col" : "col-10"}>
+                <div >
                     <JobPositionDesc {...props} />
                     <Technology lstTechnologies={props.lstTechnologies} small={true} />
                 </div>
-                {!isMobile && props.logoPath && <div className="col-2">
-                    <JobPositionImg logoPath={props.logoPath} />
-                </div>
-                }
+
             </div>
         </div>
     )

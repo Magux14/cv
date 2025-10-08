@@ -1,14 +1,8 @@
 export const lstTechnologies = [
     {
-        name: 'Ionic Framework',
-        years: 5,
-        img: 'ionic',
-        professional: true
-    },
-    {
-        name: 'Angular',
-        years: 5,
-        img: 'angular',
+        name: 'Next.js',
+        years: 3,
+        img: 'next js',
         professional: true
     },
     {
@@ -18,21 +12,15 @@ export const lstTechnologies = [
         professional: true
     },
     {
-        name: 'Javascript',
-        years: 6,
-        img: 'javascript',
-        professional: true
-    },
-    {
-        name: 'SQLite',
-        years: 2,
-        img: 'sqlite',
-        professional: true
-    },
-    {
         name: 'Typescript',
         years: 4,
         img: 'typescript',
+        professional: true
+    },
+    {
+        name: 'Javascript',
+        years: 6,
+        img: 'javascript',
         professional: true
     },
     {
@@ -42,15 +30,33 @@ export const lstTechnologies = [
         professional: true
     },
     {
-        name: 'Kotlin',
-        years: 1,
-        img: 'kotlin',
+        name: 'Angular',
+        years: 5,
+        img: 'angular',
         professional: true
     },
     {
-        name: 'Swift 5',
-        years: 1,
-        img: 'swift',
+        name: 'Ionic Framework',
+        years: 5,
+        img: 'ionic',
+        professional: true
+    },
+    {
+        name: 'Capacitor',
+        years: 3,
+        img: 'capacitor',
+        professional: true
+    },
+    {
+        name: 'Cordova',
+        years: 3,
+        img: 'cordova',
+        professional: true
+    },
+    {
+        name: 'SQLite',
+        years: 2,
+        img: 'sqlite',
         professional: true
     },
     {
@@ -84,12 +90,6 @@ export const lstTechnologies = [
         professional: true
     },
     {
-        name: 'ASP .NET',
-        years: 2,
-        img: 'net',
-        professional: true
-    },
-    {
         name: 'jQuery',
         years: 3,
         img: 'jquery',
@@ -99,6 +99,18 @@ export const lstTechnologies = [
         name: 'Bluetooth',
         years: 1,
         img: 'bluetooth',
+        professional: true
+    },
+    {
+        name: 'ASP .NET',
+        years: 2,
+        img: 'net',
+        professional: true
+    },
+    {
+        name: 'C#',
+        years: 2,
+        img: 'csharp',
         professional: true
     },
     {
@@ -120,21 +132,15 @@ export const lstTechnologies = [
         professional: false
     },
     {
-        name: 'C#',
-        years: 2,
-        img: 'csharp',
+        name: 'Kotlin',
+        years: 1,
+        img: 'kotlin',
         professional: true
     },
     {
-        name: 'Capacitor',
-        years: 3,
-        img: 'capacitor',
-        professional: true
-    },
-    {
-        name: 'Cordova',
-        years: 3,
-        img: 'cordova',
+        name: 'Swift 5',
+        years: 1,
+        img: 'swift',
         professional: true
     },
 ]

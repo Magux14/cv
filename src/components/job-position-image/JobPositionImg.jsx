@@ -1,5 +1,3 @@
-import './JobPosition.css';
-
 export const JobPositionImg = ({ logoPath }) => {
     return (
         <>

@@ -9,3 +9,13 @@
     background: rgba(255, 255, 255, 0.856);
     padding: 10px;
 }
+
+.job-position {
+    &__header-container {
+        display: flex;
+
+        img {
+            width: 100px;
+        }
+    }
+}

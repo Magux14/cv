@@ -1,16 +1,24 @@
-import './JobPosition.css';
-import './JobPositionDesc.css';
+import { JobPositionImg } from '../job-position-image/JobPositionImg';
+import './job-position-desc.scss';
 
-export const JobPositionDesc = ({ title, desc, date, company, lstResponsabilities, lstVideos, lstImgs }) => {
+export const JobPositionDesc = ({ title, desc, date, company, lstResponsabilities, lstVideos, lstImgs, logoPath, lstURLS }) => {
     return (
         <>
-            <div className='main-info-container'>
-
-                <div className="job-title">{title}</div>
-                <div className="company-name">
-                    {company}
+            <div className="job-position-desc__header-container">
+                <div className='job-position-desc__main-info-container'>
+                    <div className="job-title">{title}</div>
+                    <div className="company-name">
+                        {company}
+                    </div>
+                    <small className="date">{date}</small>
                 </div>
-                <small className="date">{date}</small>
+                {
+                    logoPath &&
+                    <JobPositionImg logoPath={logoPath} />
+                }
+            </div>
+            <div>
+
             </div>
 
             <br />
@@ -18,6 +26,17 @@ export const JobPositionDesc = ({ title, desc, date, company, lstResponsabilitie
             {desc &&
                 <>
                     <p>{desc}</p>
+                </>
+            }
+
+
+            {
+                lstURLS &&
+                <>
+                    {
+                        lstURLS.map(item => <a href={item}>{item}</a>)
+                    }
+                    <br /><br />
                 </>
             }
 

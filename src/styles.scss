@@ -5,6 +5,13 @@
 html,
 body {
     height: auto;
+    width: 100%;
+    max-width: none;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
 }
 
 .no-padding {

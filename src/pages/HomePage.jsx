@@ -1,16 +1,11 @@
 import { Summary } from '../components';
-import './HomePage.css';
+import './home-page.scss';
 
 const HomePage = () => {
   return (
-    <>
-
-      <div className='background'>
-
-        <Summary />
-      </div>
-
-    </>
+    <div className='background'>
+      <Summary />
+    </div>
   )
 }
 export default HomePage;

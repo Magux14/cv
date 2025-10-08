@@ -1,4 +1,4 @@
-import { BrowserRouter, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { AppContext } from "./AppContext";
 import { useDetectDevice } from "./hooks/useDetectDevice";
 import HomePage from "./pages/HomePage";
